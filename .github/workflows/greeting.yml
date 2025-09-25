@@ -1,19 +1,9 @@
-# ワークフローの名前
-name: はじめての自動化
-
-# ワークフローが動き出す「きっかけ」
+name: "はじめての自動化"
 on:
- push:
-
-# 実行される「作業」
+  push:
 jobs:
- # 作業の塊に名前をつける
- show-message:
-  # 作業する場所を指定(おまじないでOK)
-  runs-on: ubuntu-latest
-  #具体的な手順
-  steps:
-   # 手順に名前をつける
-   - name: "メッセージにログを出力します"
-    # 実際に実行するコマンド
-    run: echo "ファイルがPUSHされました！"
+  show-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "メッセージをログに出力します"
+        run: echo "ファイルがPUSHされました！"
