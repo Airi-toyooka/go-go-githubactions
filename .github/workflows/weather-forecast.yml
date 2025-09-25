@@ -1,0 +1,13 @@
+name: 毎日の天気
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+jobs:
+  get-weather-forecast:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "東京の天気予報を取得して表示します"
+        run: curl wttr.in/Tokyo?lang=ja&format=4
+        
