@@ -3,3 +3,5 @@
 
 https://tgg.jugani-japan.com/tsujike/github-actions1/
 yaml形式の修行中！新しいことを始めるのはとってもワクワクするね！
+
+写経の終盤！！！自動でPRされますように！！！
